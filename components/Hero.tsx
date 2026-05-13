@@ -9,7 +9,7 @@ export default function Hero() {
          style={{ width: '100%', maxWidth: '100%', position: 'relative', overflow: 'hidden' }}
        >
           <img 
-            src="/1.png" 
+            src="/1.webp" 
             alt="Ambiente da Clínica ElevPrime" 
             className="absolute inset-0 h-full w-full object-cover max-md:object-[38%_32%] md:object-center"
           />

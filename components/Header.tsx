@@ -182,7 +182,7 @@ export default function Header() {
 
               </div>
               <a href="#" className="logo-custom" aria-label="Clínica ElevPrime — início">
-                <img src="/logo.png" alt="Clínica ElevPrime" className="logo-img" />
+                <img src="/logo.webp" alt="Clínica ElevPrime" className="logo-img" />
                 <span className="logo-txt">Clínica ElevPrime</span>
               </a>
               <div>

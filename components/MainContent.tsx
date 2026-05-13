@@ -47,7 +47,7 @@ export default function MainContent() {
                       <div>
 
                           <picture>
-                            <img src="/topbar.JPG" alt="Consulta médica na Clínica ElevPrime — atendimento acolhedor e profissional." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/topbar.webp" alt="Consulta médica na Clínica ElevPrime — atendimento acolhedor e profissional." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -98,7 +98,7 @@ export default function MainContent() {
                       <div>
 
                           <picture>
-                            <img src="/2.png" alt="Check-up e avaliação de saúde na Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/2.webp" alt="Check-up e avaliação de saúde na Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -149,7 +149,7 @@ export default function MainContent() {
                       <div>
 
                           <picture>
-                            <img src="/3.png" alt="Exames e diagnóstico — Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/3.webp" alt="Exames e diagnóstico — Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -228,7 +228,7 @@ export default function MainContent() {
             <div className="w-full shrink-0 md:w-1/2 md:max-w-lg">
 
               <picture>
-                <img src="/drsamuel.jpeg" alt="Dr. André Samuel — retrato profissional na Clínica ElevPrime." className="lcp mx-auto h-auto max-h-[min(70vh,520px)] w-full max-w-sm rounded-sm object-cover object-top shadow-sm md:max-h-none md:max-w-none" width="648" height="648" loading="lazy" srcSet="" sizes="" />
+                <img src="/drsamuel.webp" alt="Dr. André Samuel — retrato profissional na Clínica ElevPrime." className="lcp mx-auto h-auto max-h-[min(70vh,520px)] w-full max-w-sm rounded-sm object-cover object-top shadow-sm md:max-h-none md:max-w-none" width="648" height="648" loading="lazy" srcSet="" sizes="" />
               </picture>
             </div>
             <div className="min-w-0 flex-1">
@@ -930,7 +930,7 @@ export default function MainContent() {
               <div className="card flex flex-col items-center text-center">
 
                   <picture className="card__picture">
-                    <img src="/medico1.jpeg" alt="Dr. André Samuel — Diretor Clínico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                    <img src="/medico1.webp" alt="Dr. André Samuel — Diretor Clínico na Clínica ElevPrime" className="lcp aspect-[4/5] w-[88%] mx-auto object-cover shadow-sm" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
                   Diretor Clínico
@@ -958,7 +958,7 @@ export default function MainContent() {
               <div className="card flex flex-col items-center text-center">
 
                   <picture className="card__picture">
-                    <img src="/medico2.jpg" alt="Dr. Leo Clecio — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                    <img src="/medico2.webp" alt="Dr. Leo Clecio — Médico na Clínica ElevPrime" className="lcp aspect-[4/5] w-[88%] mx-auto object-cover shadow-sm" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
                   Especialista
@@ -986,7 +986,7 @@ export default function MainContent() {
               <div className="card flex flex-col items-center text-center sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-md lg:col-span-1 lg:mx-0 lg:max-w-none">
 
                   <picture className="card__picture">
-                    <img src="/medico3.jpg" alt="Dr. Fhellipe Saymon — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                    <img src="/medico3.webp" alt="Dr. Fhellipe Saymon — Médico na Clínica ElevPrime" className="lcp aspect-[4/5] w-[88%] mx-auto object-cover shadow-sm" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
                   Especialista
@@ -1014,7 +1014,7 @@ export default function MainContent() {
               <div className="card flex flex-col items-center text-center">
 
                   <picture className="card__picture">
-                    <img src="/medico4.jpg" alt="Dra. Franciely L Avelino — Médica na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                    <img src="/medico4.webp" alt="Dra. Franciely L Avelino — Médica na Clínica ElevPrime" className="lcp aspect-[4/5] w-[88%] mx-auto object-cover shadow-sm" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
                   Especialista
@@ -1042,7 +1042,7 @@ export default function MainContent() {
               <div className="card flex flex-col items-center text-center">
 
                   <picture className="card__picture">
-                    <img src="/medico5.jpg" alt="Dr. Américo Motta — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                    <img src="/medico5.webp" alt="Dr. Américo Motta — Médico na Clínica ElevPrime" className="lcp aspect-[4/5] w-[88%] mx-auto object-cover shadow-sm" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
                   Especialista
