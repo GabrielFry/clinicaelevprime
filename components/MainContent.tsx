@@ -46,7 +46,7 @@ export default function MainContent() {
 
                       <div>
 
-                          <picture loading="lazy">
+                          <picture>
                             <img src="/topbar.JPG" alt="Consulta médica na Clínica ElevPrime — atendimento acolhedor e profissional." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
@@ -97,7 +97,7 @@ export default function MainContent() {
 
                       <div>
 
-                          <picture loading="lazy">
+                          <picture>
                             <img src="/2.png" alt="Check-up e avaliação de saúde na Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
@@ -148,7 +148,7 @@ export default function MainContent() {
 
                       <div>
 
-                          <picture loading="lazy">
+                          <picture>
                             <img src="/3.png" alt="Exames e diagnóstico — Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
@@ -201,7 +201,7 @@ export default function MainContent() {
 
                 </ol>                <ul className="flex-direction-nav" style={{ "display": "block" }}>
                   <li className="flex-nav-prev">
-                    <a className="flex-prev flex-disabled" href="#" tabIndex="-1">
+                    <a className="flex-prev flex-disabled" href="#" tabIndex={-1}>
                       Anterior
                     </a>
                   </li>                  <li className="flex-nav-next">
@@ -227,7 +227,7 @@ export default function MainContent() {
 
             <div className="w-full shrink-0 md:w-1/2 md:max-w-lg">
 
-              <picture loading="lazy">
+              <picture>
                 <img src="/drsamuel.jpeg" alt="Dr. André Samuel — retrato profissional na Clínica ElevPrime." className="lcp mx-auto h-auto max-h-[min(70vh,520px)] w-full max-w-sm rounded-sm object-cover object-top shadow-sm md:max-h-none md:max-w-none" width="648" height="648" loading="lazy" srcSet="" sizes="" />
               </picture>
             </div>
@@ -306,7 +306,7 @@ export default function MainContent() {
 
                   <li className="slide flex flex-col items-center justify-center text-center slide-0 flex-active-slide" style={{ "width": "100%", "float": "left", "marginRight": "-100%", "position": "relative", "opacity": "1", "display": "block", "zIndex": "2" }}>
 
-                    <picture loading="lazy">
+                    <picture>
                       <img src="/assets/asset_80.webp" alt="Compromisso com o paciente — Clínica ElevPrime" className="lcp" width="563" height="317" loading="lazy" draggable="false" srcSet="" sizes="" />
                     </picture>
                     <div className="carousel-text__content sf-hidden">
@@ -319,7 +319,7 @@ export default function MainContent() {
                   </li>
                   <li className="slide flex flex-col items-center justify-center text-center slide-1" style={{ "width": "100%", "float": "left", "marginRight": "-100%", "position": "relative", "opacity": "0", "display": "block", "zIndex": "1" }}>
 
-                    <picture loading="lazy">
+                    <picture>
                       <img src="/assets/asset_81.webp" alt="Excelência clínica e protocolos atualizados" className="lcp" width="563" height="317" loading="lazy" draggable="false" srcSet="" sizes="" />
                     </picture>
                     <div className="carousel-text__content sf-hidden">
@@ -332,7 +332,7 @@ export default function MainContent() {
                   </li>
                   <li className="slide flex flex-col items-center justify-center text-center slide-2" style={{ "width": "100%", "float": "left", "marginRight": "-100%", "position": "relative", "opacity": "0", "display": "block", "zIndex": "1" }}>
 
-                    <picture loading="lazy">
+                    <picture>
                       <img src="/assets/asset_82.webp" alt="Sustentabilidade e responsabilidade social em saúde" className="lcp" width="563" height="317" loading="lazy" draggable="false" srcSet="" sizes="" />
                     </picture>
                     <div className="carousel-text__content sf-hidden">
@@ -466,7 +466,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_83.webp" alt="Nova área de diagnóstico na Clínica ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -514,7 +514,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_84.webp" alt="Telemedicina e prontuário integrado — ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -562,7 +562,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_85.webp" alt="Medicina do trabalho e saúde ocupacional." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -610,7 +610,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_86.webp" alt="Saúde mental integrada — Clínica ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -658,7 +658,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_87.webp" alt="Vacinação e imunizações na ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -706,7 +706,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_88.webp" alt="Pilates clínico e reabilitação — ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -754,7 +754,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_89.webp" alt="Genética e medicina personalizada — ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -802,7 +802,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_90.webp" alt="Pré-natal e maternidade — Clínica ElevPrime." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -850,7 +850,7 @@ export default function MainContent() {
 
                         <div>
 
-                            <picture loading="lazy">
+                            <picture>
                               <img src="/assets/asset_91.webp" alt="Programa longevity e envelhecimento saudável." className="lcp" width="368" height="252" loading="lazy" draggable="false" srcSet="" sizes="" />
                             </picture>
 
@@ -898,7 +898,7 @@ export default function MainContent() {
 
                 </ol>                <ul className="flex-direction-nav" style={{ "display": "block" }}>
                   <li className="flex-nav-prev">
-                    <a className="flex-prev flex-disabled" href="#" tabIndex="-1">
+                    <a className="flex-prev flex-disabled" href="#" tabIndex={-1}>
                       Anterior
                     </a>
                   </li>                  <li className="flex-nav-next">

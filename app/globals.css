@@ -367,14 +367,7 @@ h1, h2, h3, h4, .font-serif {
   }
 }
 
-/* Conheça a Clínica ElevPrime (#servicos): oculta seta "anterior" em todos os breakpoints */
-#boxes #servicos .flexslider .flex-direction-nav .flex-nav-prev,
-#boxes #servicos .flexslider .flex-direction-nav .flex-prev {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* Conheça a Clínica ElevPrime (#servicos): desktop — seta "próximo" visível; texto com a mesma largura da imagem */
+/* Conheça a Clínica ElevPrime (#servicos): desktop — setas; texto com a mesma largura da imagem */
 @media (min-width: 768px) {
   #boxes #servicos {
     --servicos-media-col: min(100%, 55rem);
@@ -393,7 +386,7 @@ h1, h2, h3, h4, .font-serif {
     overflow: hidden !important;
   }
 
-  /* sixsense esconde setas abaixo de 64em; aqui forçamos exibição da seta "próximo" no bloco serviços */
+  /* sixsense esconde setas abaixo de 64em; seta "próximo" sempre; "anterior" só quando não for o 1º slide (.flex-disabled esconde via regra global) */
   #boxes #servicos .flexslider .flex-direction-nav .flex-next {
     display: block !important;
     visibility: visible !important;
@@ -405,6 +398,19 @@ h1, h2, h3, h4, .font-serif {
     background-size: 32px 32px;
     right: max(0.35rem, env(safe-area-inset-right)) !important;
     left: auto !important;
+  }
+
+  #boxes #servicos .flexslider .flex-direction-nav .flex-prev:not(.flex-disabled) {
+    display: block !important;
+    visibility: visible !important;
+    z-index: 6;
+    top: 235px !important;
+    transform: translateY(-50%);
+    width: 64px !important;
+    height: 64px !important;
+    background-size: 32px 32px;
+    left: max(0.35rem, env(safe-area-inset-left)) !important;
+    right: auto !important;
   }
 
   #boxes #servicos .flex-viewport .slide > div:first-child picture {
@@ -473,6 +479,10 @@ h1, h2, h3, h4, .font-serif {
   #boxes #servicos .flexslider .flex-direction-nav .flex-next {
     top: min(30vw, 24rem) !important; /* ~centro da área 16:9 em telas largas */
   }
+
+  #boxes #servicos .flexslider .flex-direction-nav .flex-prev:not(.flex-disabled) {
+    top: min(30vw, 24rem) !important;
+  }
 }
 
 /* Conheça a Clínica ElevPrime (#servicos): ajustes só no mobile */
@@ -539,10 +549,11 @@ h1, h2, h3, h4, .font-serif {
     box-sizing: border-box;
   }
 
+  /* Folga lateral leve para os cantos arredondados; um pouco mais estreito que o viewport do slide */
   #boxes #servicos .flex-viewport .slide > div:first-child picture {
     display: block;
-    width: 100%;
-    max-width: 100%;
+    width: calc(100% - 1.25rem);
+    max-width: calc(100% - 1.25rem);
     margin-left: auto;
     margin-right: auto;
     aspect-ratio: 16 / 9;
@@ -604,5 +615,12 @@ h1, h2, h3, h4, .font-serif {
     max-width: 100%;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  /* Mobile: sem seta "anterior" neste carrossel */
+  #boxes #servicos .flexslider .flex-direction-nav .flex-nav-prev,
+  #boxes #servicos .flexslider .flex-direction-nav .flex-prev {
+    display: none !important;
+    visibility: hidden !important;
   }
 }

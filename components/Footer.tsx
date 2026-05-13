@@ -102,8 +102,14 @@ Política de cookies
 
                <li>
 
-                 <div id="teconsent" consent="0,1,2" aria-label="Open Cookie Preferences Modal" className="truste_caIcon_display" role="complementary">
-                  <a role="link" id="icon-id016005058208102163" tabIndex="0" lang="pt-BR" aria-haspopup="dialog" aria-label="Cookie Preferences, opens a dedicated popup modal window" className="truste_cursor_pointer">
+                 <div
+                   id="teconsent"
+                   aria-label="Open Cookie Preferences Modal"
+                   className="truste_caIcon_display"
+                   role="complementary"
+                   {...({ consent: "0,1,2" } as Record<string, string>)}
+                 >
+                  <a role="link" id="icon-id016005058208102163" tabIndex={0} lang="pt-BR" aria-haspopup="dialog" aria-label="Cookie Preferences, opens a dedicated popup modal window" className="truste_cursor_pointer">
 Preferências de Cookies
                   </a>
                 </div>
