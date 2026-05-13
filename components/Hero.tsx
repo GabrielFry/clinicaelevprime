@@ -4,11 +4,14 @@ export default function Hero() {
   return (
     <div id="main-video-hero" className="with-quick-booking w-full max-w-[100vw] overflow-x-hidden" style={{ position: 'relative' }}>
 
-       <div className="video-holder" style={{ height: '100dvh', minHeight: '100dvh', width: '100%', maxWidth: '100%', position: 'relative', overflow: 'hidden' }}>
+       <div
+         className="video-holder max-md:min-h-[100svh] max-md:h-[100svh] md:h-[100dvh] md:min-h-[100dvh]"
+         style={{ width: '100%', maxWidth: '100%', position: 'relative', overflow: 'hidden' }}
+       >
           <img 
             src="/1.png" 
             alt="Ambiente da Clínica ElevPrime" 
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover max-md:object-[58%_32%] md:object-center"
           />
        </div>
        <div

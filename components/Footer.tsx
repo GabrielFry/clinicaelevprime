@@ -10,7 +10,10 @@ export default function Footer() {
 
            <div>
 
-             <a href="#" className="logo" aria-label="Clínica ElevPrime — início"></a>
+             <a href="#" className="logo" aria-label="Clínica ElevPrime — início">
+                <img src="/logo.png" alt="Logo Clínica ElevPrime" className="h-full w-auto object-contain" />
+              </a>
+
  
           </div>
            <div>

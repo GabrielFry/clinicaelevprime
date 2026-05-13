@@ -95,28 +95,102 @@ h1, h2, h3, h4, .font-serif {
   height: auto;
 }
 
+/* Conheça a nossa equipe (.box52): moldura 4:5 + object-cover (corrige conflito com #boxes picture img height:auto) */
+#boxes section.box52 .card__picture {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  max-width: min(22rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+#boxes section.box52 .card__picture img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+#boxes section.box52 .card .card__title h4 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  #boxes section.box52 .box52-cards-grid {
+    gap: 1.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  #boxes section.box52 .card__picture {
+    max-width: min(15rem, calc(100vw - 2.5rem));
+    border-radius: 0.875rem;
+  }
+
+  #boxes section.box52 .card__picture img {
+    object-position: center 12%;
+  }
+
+  #boxes section.box52 .box52__title {
+    max-width: min(24rem, calc(100vw - 1.5rem));
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 0.75rem;
+    box-sizing: border-box;
+  }
+
+  #boxes section.box52 .card .card__tagline,
+  #boxes section.box52 .card .card__title,
+  #boxes section.box52 .card .card__short-description,
+  #boxes section.box52 .card .card__btn {
+    max-width: min(14.25rem, calc(100vw - 2.25rem));
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
 #boxes .flex-viewport {
   max-width: 100%;
   overflow: hidden;
 }
 
-/* Footer — logo via background-image (área clicável sem <img>) */
-#footer a.logo {
-  display: inline-block;
-  background-image: url("/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: min(100%, 12rem);
-  height: 3.25rem;
+/* Footer — remove logo em background do legado (sixsense); exibe <img> dentro de a.logo */
+#footer > div > div > div a.logo {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: initial !important;
+  background-size: initial !important;
+  text-indent: 0 !important;
+  white-space: normal !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: min(100%, 14rem);
+  display: inline-block !important;
+  overflow: visible !important;
   text-decoration: none;
-  overflow: hidden;
+}
+
+#footer > div > div > div a.logo img {
+  display: block;
+  height: 3.25rem;
+  width: auto;
+  max-width: min(100%, 14rem);
+  object-fit: contain;
 }
 
 @media (min-width: 640px) {
-  #footer a.logo {
-    width: min(100%, 14rem);
+  #footer > div > div > div a.logo img {
     height: 3.5rem;
+    max-width: min(100%, 16rem);
   }
 }
 
@@ -257,10 +331,17 @@ h1, h2, h3, h4, .font-serif {
   }
 }
 
-/* Conheça a Clínica ElevPrime (#servicos): desktop — setas visíveis; texto com a mesma largura da imagem */
+/* Conheça a Clínica ElevPrime (#servicos): oculta seta "anterior" em todos os breakpoints */
+#boxes #servicos .flexslider .flex-direction-nav .flex-nav-prev,
+#boxes #servicos .flexslider .flex-direction-nav .flex-prev {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Conheça a Clínica ElevPrime (#servicos): desktop — seta "próximo" visível; texto com a mesma largura da imagem */
 @media (min-width: 768px) {
   #boxes #servicos {
-    --servicos-media-col: min(100%, 48rem);
+    --servicos-media-col: min(100%, 58rem);
   }
 
   #boxes #servicos .carousel.center {
@@ -276,20 +357,16 @@ h1, h2, h3, h4, .font-serif {
     overflow: hidden !important;
   }
 
-  /* sixsense esconde setas abaixo de 64em; aqui forçamos exibição no bloco serviços */
-  #boxes #servicos .flexslider .flex-direction-nav .flex-prev,
+  /* sixsense esconde setas abaixo de 64em; aqui forçamos exibição da seta "próximo" no bloco serviços */
   #boxes #servicos .flexslider .flex-direction-nav .flex-next {
     display: block !important;
     visibility: visible !important;
     z-index: 6;
-  }
-
-  #boxes #servicos .flexslider .flex-direction-nav .flex-prev {
-    left: max(0.35rem, env(safe-area-inset-left)) !important;
-    right: auto !important;
-  }
-
-  #boxes #servicos .flexslider .flex-direction-nav .flex-next {
+    top: 265px !important; /* centro aproximado da área da imagem (proporção mais alta) */
+    transform: translateY(-50%);
+    width: 64px !important;
+    height: 64px !important;
+    background-size: 32px 32px;
     right: max(0.35rem, env(safe-area-inset-right)) !important;
     left: auto !important;
   }
@@ -300,8 +377,8 @@ h1, h2, h3, h4, .font-serif {
     max-width: var(--servicos-media-col);
     margin-left: auto;
     margin-right: auto;
-    aspect-ratio: 16 / 9;
-    border-radius: 0.375rem;
+    aspect-ratio: 16 / 10;
+    border-radius: 0.75rem;
     overflow: hidden;
     box-sizing: border-box;
     background: #f4f4f5;
@@ -313,7 +390,7 @@ h1, h2, h3, h4, .font-serif {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 0.375rem;
+    border-radius: 0.75rem;
   }
 
   /* Troca o grid 1fr / 2fr do legado por coluna única alinhada à largura da imagem */
@@ -347,12 +424,21 @@ h1, h2, h3, h4, .font-serif {
 
 @media (min-width: 1024px) {
   #boxes #servicos {
-    --servicos-media-col: min(100%, 72rem);
+    --servicos-media-col: min(100%, min(92rem, 96vw));
+  }
+
+  #boxes #servicos .flexslider .flex-direction-nav .flex-next {
+    top: min(32vw, 30rem) !important; /* centro da área da imagem (16:10, slide mais alto) */
   }
 }
 
 /* Conheça a Clínica ElevPrime (#servicos): ajustes só no mobile */
 @media (max-width: 767px) {
+  #boxes #servicos {
+    padding-left: max(0.5rem, env(safe-area-inset-left)) !important;
+    padding-right: max(0.5rem, env(safe-area-inset-right)) !important;
+  }
+
   /* Legado sixsense: margens -3vw e overflow:visible no .flex-viewport — só corrigimos no mobile */
   #boxes #servicos .carousel.center {
     overflow: hidden;
@@ -421,8 +507,8 @@ h1, h2, h3, h4, .font-serif {
     margin-left: auto;
     margin-right: auto;
     aspect-ratio: 4 / 3;
-    max-height: min(82vw, 26rem);
-    border-radius: 0.5rem;
+    max-height: min(100vw, 42rem);
+    border-radius: 0.75rem;
     overflow: hidden;
     box-sizing: border-box;
     background: #f4f4f5;
@@ -434,7 +520,7 @@ h1, h2, h3, h4, .font-serif {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
   }
 
   #boxes #servicos .slide__content {

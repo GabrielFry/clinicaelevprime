@@ -78,10 +78,6 @@ export default function Header() {
           flex-wrap: nowrap !important;
         }
         @media (max-width: 480px) {
-          .logo-img {
-            height: 72px !important;
-            max-height: 88px !important;
-          }
           .scrolled-header .logo-txt {
             font-size: 0.85rem !important;
             letter-spacing: 0.08em !important;
@@ -92,6 +88,31 @@ export default function Header() {
           #main-menu .ihgLoginBtn {
             font-size: 0.8rem !important;
             padding: 0.35rem 0.5rem !important;
+          }
+        }
+
+        /* Mobile: barra do legado (46px) menor que a logo — sobe demais; safe area + altura e logo proporcionais */
+        @media (max-width: 767px) {
+          #main-menu > div > div:last-child {
+            padding-top: max(0.75rem, calc(env(safe-area-inset-top, 0px) + 0.5rem)) !important;
+            padding-bottom: 0.75rem !important;
+          }
+          #main-menu > div > div:last-child > div {
+            height: auto !important;
+            min-height: 3.25rem !important;
+            align-items: center !important;
+          }
+          .logo-img {
+            height: clamp(2.75rem, 10vw, 3.125rem) !important;
+            max-height: 3.125rem !important;
+            width: auto !important;
+          }
+          #main-menu > div > div:last-child > div > a.logo-custom {
+            transform: translate(-50%, calc(-50% + 4px)) !important;
+          }
+          .scrolled-header > div > div:last-child {
+            padding-top: max(0.45rem, calc(env(safe-area-inset-top, 0px) + 0.25rem)) !important;
+            padding-bottom: 0.45rem !important;
           }
         }
       `}</style>

@@ -47,7 +47,7 @@ export default function MainContent() {
                       <div>
 
                           <picture loading="lazy">
-                            <img src="/topbar.JPG" alt="Consulta médica na Clínica ElevPrime — atendimento acolhedor e profissional." className="lcp" width="800" height="450" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/topbar.JPG" alt="Consulta médica na Clínica ElevPrime — atendimento acolhedor e profissional." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -98,7 +98,7 @@ export default function MainContent() {
                       <div>
 
                           <picture loading="lazy">
-                            <img src="/2.png" alt="Check-up e avaliação de saúde na Clínica ElevPrime." className="lcp" width="800" height="450" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/2.png" alt="Check-up e avaliação de saúde na Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -149,7 +149,7 @@ export default function MainContent() {
                       <div>
 
                           <picture loading="lazy">
-                            <img src="/3.png" alt="Exames e diagnóstico — Clínica ElevPrime." className="lcp" width="800" height="450" loading="lazy" draggable="false" srcSet="" sizes="" />
+                            <img src="/3.png" alt="Exames e diagnóstico — Clínica ElevPrime." className="lcp" width="1280" height="720" loading="lazy" draggable="false" srcSet="" sizes="" />
                           </picture>
 
                       </div>
@@ -289,7 +289,7 @@ export default function MainContent() {
         </div>
 
       </div>
-      <div className="box box53 fadeInUp full-visible">
+      <div className="box box53 fadeInUp full-visible hidden" aria-hidden="true">
 
         <div className="container">
 
@@ -923,32 +923,32 @@ export default function MainContent() {
           <div className="row">
 
             <h2 className="box52__title">
-              Na ElevPrime
+              Conheça a nossa equipe
             </h2>
             <div className="box52-cards-grid mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
 
               <div className="card flex flex-col items-center text-center">
 
-                  <picture className="card__picture" loading="lazy">
-                    <img src="/assets/asset_92.webp" alt="Pacotes de consultas e check-up na ElevPrime" className="lcp mx-auto h-auto max-w-full" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                  <picture className="card__picture">
+                    <img src="/medico1.jpeg" alt="Dr. André Samuel — Diretor Clínico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
-                  Promoções
+                  Diretor Clínico
                 </span>
                 <a href="#contato" target="_self" className="card__title">
 
                   <h4>
-                    Consultas e check-up com condições especiais
+                    Dr. André Samuel
                   </h4>
 
                 </a>
                 <p className="card__short-description">
-                  Monte seu pacote de retornos ou traga a família: condições facilitadas para quem busca continuidade no cuidado.
+                  Médico dedicado ao cuidado integral e excelência no atendimento personalizado.
                 </p>
                 <p className="card__btn">
 
                   <a className="button-link" href="#contato" target="_self">
-                    Ver ofertas atuais
+                    Agendar com Dr. André
                   </a>
 
                 </p>
@@ -957,26 +957,26 @@ export default function MainContent() {
 
               <div className="card flex flex-col items-center text-center">
 
-                  <picture className="card__picture" loading="lazy">
-                    <img src="/assets/asset_93.webp" alt="Vale-presente em serviços de saúde" className="lcp mx-auto h-auto max-w-full" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                  <picture className="card__picture">
+                    <img src="/medico2.jpg" alt="Dr. Leo Clecio — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
-                  Vale-saúde
+                  Especialista
                 </span>
                 <a href="#contato" target="_self" className="card__title">
 
                   <h4>
-                    Presenteie com cuidado e bem-estar
+                    Dr. Leo Clecio
                   </h4>
 
                 </a>
                 <p className="card__short-description">
-                  Vales para consultas, sessões de nutrição ou check-up: um gesto útil para quem você ama.
+                  Comprometido com a saúde preventiva e o bem-estar duradouro de seus pacientes.
                 </p>
                 <p className="card__btn">
 
                   <a className="button-link" href="#contato" target="_self">
-                    Solicitar vale-presente
+                    Agendar com Dr. Leo
                   </a>
 
                 </p>
@@ -985,26 +985,82 @@ export default function MainContent() {
 
               <div className="card flex flex-col items-center text-center sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-md lg:col-span-1 lg:mx-0 lg:max-w-none">
 
-                  <picture className="card__picture" loading="lazy">
-                    <img src="/assets/asset_94.webp" alt="Experiências de cuidado na ElevPrime" className="lcp mx-auto h-auto max-w-full" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                  <picture className="card__picture">
+                    <img src="/medico3.jpg" alt="Dr. Fhellipe Saymon — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
                   </picture>
                 <span className="card__tagline category">
-                  Experiências
+                  Especialista
                 </span>
-                <a href="#servicos" target="_self" className="card__title">
+                <a href="#contato" target="_self" className="card__title">
 
                   <h4>
-                    Grupos e oficinas de saúde
+                    Dr. Fhellipe Saymon
                   </h4>
 
                 </a>
                 <p className="card__short-description">
-                  Oficinas sobre sono, alimentação infantil, primeiros socorros domiciliares e muito mais — conteúdo prático com equipe da clínica.
+                  Focado em diagnósticos precisos e tratamentos humanizados de alta qualidade.
                 </p>
                 <p className="card__btn">
 
-                  <a className="button-link" href="#servicos" target="_self">
-                    Ver calendário
+                  <a className="button-link" href="#contato" target="_self">
+                    Agendar com Dr. Fhellipe
+                  </a>
+
+                </p>
+
+              </div>
+
+              <div className="card flex flex-col items-center text-center">
+
+                  <picture className="card__picture">
+                    <img src="/medico4.jpg" alt="Dra. Franciely L Avelino — Médica na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                  </picture>
+                <span className="card__tagline category">
+                  Especialista
+                </span>
+                <a href="#contato" target="_self" className="card__title">
+
+                  <h4>
+                    Dra. Franciely L Avelino
+                  </h4>
+
+                </a>
+                <p className="card__short-description">
+                  Dedicação e cuidado atencioso para a saúde e qualidade de vida dos pacientes.
+                </p>
+                <p className="card__btn">
+
+                  <a className="button-link" href="#contato" target="_self">
+                    Agendar com Dra. Franciely
+                  </a>
+
+                </p>
+
+              </div>
+
+              <div className="card flex flex-col items-center text-center">
+
+                  <picture className="card__picture">
+                    <img src="/medico5.jpg" alt="Dr. Américo Motta — Médico na Clínica ElevPrime" className="lcp" width="368" height="459" loading="lazy" draggable="false" srcSet="" sizes="" />
+                  </picture>
+                <span className="card__tagline category">
+                  Especialista
+                </span>
+                <a href="#contato" target="_self" className="card__title">
+
+                  <h4>
+                    Dr. Américo Motta
+                  </h4>
+
+                </a>
+                <p className="card__short-description">
+                  Experiência e compromisso com a excelência clínica e o atendimento humanizado.
+                </p>
+                <p className="card__btn">
+
+                  <a className="button-link" href="#contato" target="_self">
+                    Agendar com Dr. Américo
                   </a>
 
                 </p>
