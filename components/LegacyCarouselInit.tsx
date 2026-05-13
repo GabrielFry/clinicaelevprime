@@ -65,9 +65,6 @@ function initStripCarousel(root: HTMLElement) {
     ) || autoplayMs,
   );
 
-  const mqlDesktop = window.matchMedia("(min-width: 768px)");
-  const isServicosCarousel = Boolean(root.closest("#servicos"));
-
   let index = 0;
   let stride = 0;
   let autoplayTimer: ReturnType<typeof setInterval> | null = null;
@@ -166,16 +163,11 @@ function initStripCarousel(root: HTMLElement) {
     }
   };
 
-  const canRunAutoplay = () => {
-    const desktopOk = isServicosCarousel ? mqlDesktop.matches : true;
-    return (
-      desktopOk &&
-      autoplayMs > 0 &&
-      n > 1 &&
-      !hoverPause &&
-      document.visibilityState === "visible"
-    );
-  };
+  const canRunAutoplay = () =>
+    autoplayMs > 0 &&
+    n > 1 &&
+    !hoverPause &&
+    document.visibilityState === "visible";
 
   const startAutoplayInterval = () => {
     clearResumeTimeout();
@@ -259,18 +251,6 @@ function initStripCarousel(root: HTMLElement) {
   };
   document.addEventListener("visibilitychange", onVisibility);
 
-  const onDesktopMqChange = () => {
-    if (!isServicosCarousel) return;
-    stopAutoplayInterval();
-    clearResumeTimeout();
-    if (mqlDesktop.matches) {
-      startAutoplayInterval();
-    }
-  };
-  if (isServicosCarousel) {
-    mqlDesktop.addEventListener("change", onDesktopMqChange);
-  }
-
   const ro = new ResizeObserver(() => layout());
   ro.observe(viewport);
   layout();
@@ -288,9 +268,6 @@ function initStripCarousel(root: HTMLElement) {
     root.removeEventListener("focusin", onFocusIn);
     root.removeEventListener("focusout", onFocusOut);
     document.removeEventListener("visibilitychange", onVisibility);
-    if (isServicosCarousel) {
-      mqlDesktop.removeEventListener("change", onDesktopMqChange);
-    }
     ro.disconnect();
   };
 }
