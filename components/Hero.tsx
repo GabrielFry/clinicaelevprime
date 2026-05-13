@@ -11,7 +11,7 @@ export default function Hero() {
           <img 
             src="/1.png" 
             alt="Ambiente da Clínica ElevPrime" 
-            className="absolute inset-0 h-full w-full object-cover max-md:object-[58%_32%] md:object-center"
+            className="absolute inset-0 h-full w-full object-cover max-md:object-[38%_32%] md:object-center"
           />
        </div>
        <div
